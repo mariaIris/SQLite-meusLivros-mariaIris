@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lista"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/listaTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginBottom="104dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="101dp"
+        android:text="Autor"
+        app:layout_constraintBottom_toBottomOf="@+id/nota"
+        app:layout_constraintEnd_toStartOf="@+id/autor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/autor"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="36dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/listaTitulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/listaTitulo"
+        app:layout_constraintTop_toTopOf="@+id/listaTitulo" />
+
+    <TextView
+        android:id="@+id/listaAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginBottom="47dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="54dp"
+        android:text="Titulo"
+        app:layout_constraintBottom_toBottomOf="@+id/autor"
+        app:layout_constraintEnd_toStartOf="@+id/titulo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nota"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="36dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/listaAno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/listaAno"
+        app:layout_constraintTop_toTopOf="@+id/listaAno" />
+
+    <TextView
+        android:id="@+id/ano"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="36dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/listaAno2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/listaAno2"
+        app:layout_constraintTop_toTopOf="@+id/listaAno2" />
+
+    <TextView
+        android:id="@+id/listaAno"
+        android:layout_width="42dp"
+        android:layout_height="21dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="37dp"
+        android:text="Nota:"
+        app:layout_constraintEnd_toStartOf="@+id/nota"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listaAno2" />
+
+    <TextView
+        android:id="@+id/listaAno2"
+        android:layout_width="42dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="150dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="150dp"
+        android:text="Ano:"
+        app:layout_constraintBottom_toTopOf="@+id/buttonAnterior"
+        app:layout_constraintEnd_toStartOf="@+id/ano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginEnd="36dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/listaAutor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/listaAutor"
+        app:layout_constraintTop_toTopOf="@+id/listaAutor" />
+
+    <Button
+        android:id="@+id/buttonAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="146dp"
+        android:layout_marginEnd="31dp"
+        android:text="Anterior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonProximo" />
+
+    <Button
+        android:id="@+id/buttonProximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="83dp"
+        android:text="Próximo"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonAnterior"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

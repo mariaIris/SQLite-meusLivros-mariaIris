@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Cadastro">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="56dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginStart="44dp"
+        android:text="Titulo:"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/autor"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTitulo"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/autor"
+        android:layout_width="56dp"
+        android:layout_height="19dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="44dp"
+        android:text="Autor:"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toTopOf="@+id/ano"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextAutor"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/titulo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/ano"
+        android:layout_width="56dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="44dp"
+        android:text="Ano:"
+        android:textAlignment="viewStart"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="135dp" />
+
+    <EditText
+        android:id="@+id/editTextAno"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ano"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <TextView
+        android:id="@+id/ratingBarNota"
+        android:layout_width="56dp"
+        android:layout_height="23dp"
+        android:layout_marginBottom="300dp"
+        android:layout_marginStart="44dp"
+        android:text="Nota:"
+        android:textAlignment="viewStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextNota"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/autor"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBarNota"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ratingBarNota"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <Button
+        android:id="@+id/buttonSalva"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SALVA"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <Button
+        android:id="@+id/buttonCancela"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CANCELA"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="319dp" />
+</android.support.constraint.ConstraintLayout>
